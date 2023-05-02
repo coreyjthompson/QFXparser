@@ -88,6 +88,12 @@ namespace QFXparser
                 AsOf = rawStatement.LedgerBalance.AsOf
             };
 
+            statement.AvailableBalance = new AvailableBalance
+            {
+                Amount = rawStatement.LedgerBalance.Amount,
+                AsOf = rawStatement.LedgerBalance.AsOf
+            };
+
             return statement;
         }
 
